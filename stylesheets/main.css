@@ -76,6 +76,7 @@ h1,h2{
     border: none;
     height: 100%;
     cursor: pointer;
+    background-color: transparent !important;
 }
 .contactBox select:focus-visible{
     outline: none;
