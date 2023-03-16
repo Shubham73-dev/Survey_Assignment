@@ -3,9 +3,9 @@
     padding: 0;
     font-family: 'Poppins';
 }
-body{
+/* body{
     background-color: whitesmoke;
-}
+} */
 .row{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -41,6 +41,9 @@ h1,h2{
 .img-adj{
     height: 100%;
     width: 100%;
+}
+.pageContainer{
+    padding: 1rem;
 }
 .imageContainer{
     height: 100vh;

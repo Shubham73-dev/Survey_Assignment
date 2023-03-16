@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="./stylesheets/thankyou.css">
+</head>
+<body>
+    <p>“Thanks a ton for taking out your precious time and for completing the survey
+        <br>
+        Email Address <span class="email"></span>
+        <br>
+        Contact Number <span class="code"></span>&minus;<span class="mobile"></span>”
+    </p>
+    <script>
+        var params = new URLSearchParams(window.location.search);
+        const decodedEmail = decodeURIComponent(params.get("email"));
+        const decodedCountryCode = decodeURIComponent(params.get("country-code"));
+        const decodedTel = decodeURIComponent(params.get("tel"));
+        var emailEle = document.getElementsByClassName('email')[0]
+        var codeEle = document.getElementsByClassName('code')[0]
+        var mobileEle = document.getElementsByClassName('mobile')[0]
+        emailEle.innerHTML = decodedEmail
+        codeEle.innerHTML = decodedCountryCode
+        mobileEle.innerHTML = decodedTel
+    </script>
+</body>
+</html>

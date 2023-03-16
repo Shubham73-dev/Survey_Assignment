@@ -8,6 +8,7 @@
     <title>Assignment</title>
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="./stylesheets/main.css">
+    <script src="./scripts/main.js"></script>
 </head>
 
 <body>
@@ -24,18 +25,21 @@
                     <h1>Get a <span class="upperCase">free</span></h1>
                     <h2>consultation with an expert</h2>
                 </div>
-                <form action="#">
+                <form action="./thankyou.html">
                     <div class="columnDisplay">
                         <div class="inpsContainer emailBox">
-                            <input type="email" name="" id="" placeholder="Enter Your email" required>
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" placeholder="Enter Your email" required>
                         </div>
                         <div class="inpsContainer contactBox flex-vertical-align">
-                            <select name="" id="countries">
+                            <label for="country-code"></label>
+                            <select id="country-code" name="country-code">
                                 <option value="+91" selected>India</option>
                                 <option value="+977">Nepal</option>
                                 <option value="+7">Russia</option>
                             </select>
-                            <input type="tel" name="" id="" placeholder="Enter Your mobile" pattern="[0-9]{10}" required>
+                            <label for="tel"></label>
+                            <input type="tel" name="tel" id="tel" placeholder="Enter Your mobile" pattern="[0-9]{10}" required>
                         </div>
                         <div class="inpsContainer btn">
                             <input type="submit" value="Talk to Us &rarr;">
